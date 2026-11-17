@@ -43,7 +43,7 @@ h3{font-size:1.5rem; color:var(--paper); margin-top:2.2em}
 /* ---------- Hero ---------- */
 .hero{position:relative; min-height:100svh; display:grid; place-items:center; overflow:hidden}
 .hero__bg{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:60% center}
-.hero__content{position:relative; text-align:center; padding:2rem 16px 12rem; max-width:760px}
+.hero__content{position: relative; text-align: center; padding: 3rem 16px 3.5rem; max-width: 760px}
 .hero__logo{width:min(560px,82vw); margin:0 auto 1.4rem; transform:translateX(6%)}
 .hero__line{font-family:var(--serif-display); font-style:italic; font-size:clamp(1.25rem,2.6vw,1.6rem); color:var(--paper); margin:0 0 2rem; text-shadow:0 2px 10px rgba(0,0,0,.8)}
 .hero__actions{display:flex; gap:1rem; justify-content:center; flex-wrap:wrap}
@@ -134,4 +134,101 @@ a.zoom:hover img{filter:brightness(1.12)}
   .screens{grid-template-columns:1fr}
   .wishlist__text{font-size:1.6rem}
   .icon--big{width:52px; height:52px}
+}
+
+/* ---------- Newsletter (Kit Embed) ---------- */
+.newsletter{
+  margin-top: 1.2rem;
+  text-align: center;
+}
+.newsletter__note{
+  font-family: var(--serif-display);
+  font-style: italic;
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+  color: var(--paper);
+  margin: 0 0 1rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,.8);
+}
+.newsletter__fields{
+  display: flex !important;
+  gap: 0.6rem !important;
+  flex-wrap: wrap !important;
+  max-width: 440px;
+  margin: 0 auto !important; /* ESTO CENTRA LA CAJA */
+  justify-content: center !important;
+}
+.formkit-field{
+  flex: 1 1 220px !important;
+  margin: 0 !important;
+}
+.newsletter__input{
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(23, 17, 13, 0.85) !important;
+  border: 1px solid var(--gold-soft) !important;
+  border-radius: 0 !important;
+  color: var(--paper) !important;
+  font-family: var(--serif-text) !important;
+  font-size: 1rem !important;
+  padding: 0.6rem 0.9rem !important;
+  outline: none !important;
+  transition: border-color 0.2s ease;
+  backdrop-filter: blur(2px);
+}
+.newsletter__input:focus{
+  border-color: var(--gold) !important;
+}
+.newsletter__input::placeholder{
+  color: var(--paper-dim) !important;
+  opacity: 0.6 !important;
+}
+.newsletter__submit{
+  border-radius: 0 !important;
+  padding: 0.6rem 1.4rem !important;
+  cursor: pointer;
+  white-space: nowrap;
+}
+/* Neutralizar popups o estilos invasivos de Kit */
+.formkit-powered-by-convertkit-container,
+.formkit-form[data-format="modal"],
+.formkit-form[data-format="slide in"],
+.formkit-sticky-bar{
+  display: none !important;
+}
+.formkit-alert-success{
+  font-family: var(--serif-text);
+  background: rgba(22, 119, 190, 0.15) !important;
+  border: 1px solid var(--gold) !important;
+  color: var(--paper) !important;
+  padding: 0.8rem !important;
+  margin-top: 1rem !important;
+}
+/* ---------- Language switcher ---------- */
+.lang{
+  display:inline-flex; gap:.7rem; align-items:center;
+  margin-left:.2rem; padding-left:clamp(.8rem,2.5vw,2rem);
+  border-left:1px solid var(--gold-soft);
+}
+.lang a[aria-current="true"]{color:var(--gold)}
+
+/* ---------- Japanese typography ---------- */
+/* Cormorant / EB Garamond have no kana or kanji, so Japanese falls back to Noto Serif JP */
+html:lang(ja){
+  --serif-display:"Cormorant Garamond","Noto Serif JP","Yu Mincho","Hiragino Mincho ProN",serif;
+  --serif-menu:"Cormorant SC","Noto Serif JP","Yu Mincho","Hiragino Mincho ProN",serif;
+  --serif-text:"EB Garamond","Noto Serif JP","Yu Mincho","Hiragino Mincho ProN",serif;
+}
+html:lang(ja) body{font-size:17px; line-height:1.95; letter-spacing:.03em}
+/* Japanese has no true italics: a slanted fallback looks broken */
+html:lang(ja) .hero__line,
+html:lang(ja) .newsletter__note,
+html:lang(ja) figcaption,
+html:lang(ja) .resume__title,
+html:lang(ja) i,
+html:lang(ja) em{font-style:normal}
+html:lang(ja) .hero__line{line-height:1.8}
+html:lang(ja) h2,
+html:lang(ja) h3{letter-spacing:.08em}
+@media (max-width:820px){
+  html:lang(ja) body{font-size:16px}
 }

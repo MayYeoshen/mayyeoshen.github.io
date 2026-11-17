@@ -8,7 +8,14 @@
 <!-- Preview image for links shared on social media -->
 <meta property="og:title" content="May Yeoshen — Una Sangre">
 <meta property="og:description" content="A literary visual novel about five immortals across eight centuries. Written, painted and developed by May Yeoshen.">
-<meta property="og:image" content="img/una-sangre/hero.webp">
+<meta property="og:image" content="https://mayyeo.com/img/una-sangre/hero.webp">
+<meta property="og:locale" content="en_US">
+<!-- Language versions -->
+<link rel="alternate" hreflang="en" href="https://mayyeo.com/">
+<link rel="alternate" hreflang="es" href="https://mayyeo.com/es/">
+<link rel="alternate" hreflang="ja" href="https://mayyeo.com/ja/">
+<link rel="alternate" hreflang="x-default" href="https://mayyeo.com/">
+<link rel="canonical" href="https://mayyeo.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -23,6 +30,11 @@
     <a href="#work">Work</a>
     <a href="#about">About</a>
     <a href="#resume">Résumé</a>
+    <span class="lang">
+      <a href="./" hreflang="en" lang="en" aria-current="true">EN</a>
+      <a href="es/" hreflang="es" lang="es" >ES</a>
+      <a href="ja/" hreflang="ja" lang="ja" >日本語</a>
+    </span>
   </nav>
 </header>
 
@@ -33,7 +45,6 @@
     <img class="hero__logo" src="img/una-sangre/logo.webp" alt="Una Sangre">
     <p class="hero__line">A story about the cost of going on existing<br>when there is no reason left to.</p>
     <div class="hero__actions">
-      <!-- Replace STEAM_APP_ID with the app number once the page is public -->
       <a class="wishlist" href="https://store.steampowered.com/app/5543490/Una_Sangre/">
         <span class="icon icon--big">
           <img src="img/icons/SteamLogoWL.webp" alt="">
@@ -41,6 +52,24 @@
         </span>
         <span class="wishlist__text">Wishlist</span>
       </a>
+    </div>
+<!-- ===================== NEWSLETTER (KIT) ===================== -->
+    <div class="newsletter">
+      <p class="newsletter__note">Join our newsletter for demo updates and the following Kickstarter</p>
+      <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+      <form action="https://app.kit.com/forms/10202096/subscriptions" class="seva-form formkit-form newsletter__form" method="post" data-sv-form="10202096" data-uid="24d27577b9" data-format="inline" data-version="5">
+        <div data-style="clean">
+          <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+          <div data-element="fields" class="newsletter__fields">
+            <div class="formkit-field">
+              <input class="formkit-input newsletter__input" name="email_address" aria-label="Email Address" placeholder="Your email address" required="" type="email">
+            </div>
+            <button data-element="submit" class="btn btn--gold newsletter__submit">
+              <span>Subscribe</span>
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </section>
@@ -98,19 +127,19 @@
 
   <h2 class="work__title">Selected work</h2>
   <div class="masonry">
-    <figure><a href="img/work/glenn-2008.webp" class="zoom"><img src="img/work/glenn-2008.webp" alt="Portrait of a man with long red hair in a dark suit" loading="lazy"></a><figcaption>Glenn Sheridan, 2008</figcaption></figure>
-    <figure><a href="img/work/paul-scarf.webp" class="zoom"><img src="img/work/paul-scarf.webp" alt="Portrait of a young man with long blond hair and a white scarf" loading="lazy"></a><figcaption>Paul, 2004</figcaption></figure>
-    <figure><a href="img/work/juno-millet.webp" class="zoom"><img src="img/work/juno-millet.webp" alt="Portrait of a woman in sixteenth-century dress" loading="lazy"></a><figcaption>Juno Millet</figcaption></figure>
-    <figure><a href="img/work/bus-01.webp" class="zoom"><img src="img/work/bus-01.webp" alt="Pencil sketches of bus passengers" loading="lazy"></a><figcaption>From “98/116”, sketches drawn on the bus</figcaption></figure>
-    <figure><a href="img/work/cuchulainn.webp" class="zoom"><img src="img/work/cuchulainn.webp" alt="Painting of a warrior with a spear standing over a fallen wolf" loading="lazy"></a><figcaption>Cú Chulainn</figcaption></figure>
-    <figure><a href="img/work/dagger-ink.webp" class="zoom"><img src="img/work/dagger-ink.webp" alt="Ink drawing of a bearded man with a hand over his mouth, holding a dagger" loading="lazy"></a><figcaption>Paul in Dalmatia</figcaption></figure>
-    <figure><a href="img/work/red-cap.webp" class="zoom"><img src="img/work/red-cap.webp" alt="Portrait in the Renaissance style with a red cap and fur collar" loading="lazy"></a><figcaption>Armand the Vampire</figcaption></figure>
-    <figure><a href="img/work/quill.webp" class="zoom"><img src="img/work/quill.webp" alt="Eighteenth-century portrait of a young man writing with a quill" loading="lazy"></a><figcaption>Coltrane Holland, 2011</figcaption></figure>
-    <figure><a href="img/work/hands-ink.webp" class="zoom"><img src="img/work/hands-ink.webp" alt="Ink drawing of a man inserting prosthetic eyes" loading="lazy"></a><figcaption>Paul</figcaption></figure>
-    <figure><a href="img/work/blond-suit.webp" class="zoom"><img src="img/work/blond-suit.webp" alt="Portrait of a young man with blond hair, a suit and a striped tie" loading="lazy"></a><figcaption>Coltrane, 2009</figcaption></figure>
-    <figure><a href="img/work/folk-red.webp" class="zoom"><img src="img/work/folk-red.webp" alt="Folk-art illustration of a boy, a wolf and a cat on red" loading="lazy"></a><figcaption>Peter and the Wolf</figcaption></figure>
-    <figure><a href="img/work/bus-02.webp" class="zoom"><img src="img/work/bus-02.webp" alt="Pencil sketches of bus passengers in winter" loading="lazy"></a><figcaption>From “98/116”</figcaption></figure>
-    <figure><a href="img/work/armory.webp" class="zoom"><img src="img/work/armory.webp" alt="Ink illustration of a man in a suit in front of a wall of rifles" loading="lazy"></a><figcaption>Glenn, arms dealer</figcaption></figure>
+    <figure><a href="img/work/glenn-2008.webp" class="zoom"><img src="img/work/glenn-2008.webp" alt="Portrait of a man with long red hair in a dark suit" loading="lazy"></a><figcaption>Glenn Sheridan. 2008</figcaption></figure>
+    <figure><a href="img/work/paul-scarf.webp" class="zoom"><img src="img/work/paul-scarf.webp" alt="Portrait of a young man with long blond hair and a white scarf" loading="lazy"></a><figcaption>Paul. 2004</figcaption></figure>
+    <figure><a href="img/work/juno-millet.webp" class="zoom"><img src="img/work/juno-millet.webp" alt="Portrait of a woman in sixteenth-century dress" loading="lazy"></a><figcaption>Juno Millet. 2011</figcaption></figure>
+    <figure><a href="img/work/bus-01.webp" class="zoom"><img src="img/work/bus-01.webp" alt="Pencil sketches of bus passengers" loading="lazy"></a><figcaption>From “98/116”, sketches drawn on the bus. 2015</figcaption></figure>
+    <figure><a href="img/work/cuchulainn.webp" class="zoom"><img src="img/work/cuchulainn.webp" alt="Painting of a warrior with a spear standing over a fallen wolf" loading="lazy"></a><figcaption>Cú Chulainn. 2009</figcaption></figure>
+    <figure><a href="img/work/dagger-ink.webp" class="zoom"><img src="img/work/dagger-ink.webp" alt="Ink drawing of a bearded man with a hand over his mouth, holding a dagger" loading="lazy"></a><figcaption>Paul in Dalmatia. 2017</figcaption></figure>
+    <figure><a href="img/work/red-cap.webp" class="zoom"><img src="img/work/red-cap.webp" alt="Portrait in the Renaissance style with a red cap and fur collar" loading="lazy"></a><figcaption>Armand the Vampire. 2008</figcaption></figure>
+    <figure><a href="img/work/quill.webp" class="zoom"><img src="img/work/quill.webp" alt="Eighteenth-century portrait of a young man writing with a quill" loading="lazy"></a><figcaption>Coltrane Holland. 2011</figcaption></figure>
+    <figure><a href="img/work/hands-ink.webp" class="zoom"><img src="img/work/hands-ink.webp" alt="Ink drawing of a man inserting prosthetic eyes" loading="lazy"></a><figcaption>Paul putting on his prosthetics. 2017</figcaption></figure>
+    <figure><a href="img/work/blond-suit.webp" class="zoom"><img src="img/work/blond-suit.webp" alt="Portrait of a young man with blond hair, a suit and a striped tie" loading="lazy"></a><figcaption>Coltrane. 2009</figcaption></figure>
+    <figure><a href="img/work/folk-red.webp" class="zoom"><img src="img/work/folk-red.webp" alt="Folk-art illustration of a boy, a wolf and a cat on red" loading="lazy"></a><figcaption>Peter and the Wolf. 2020</figcaption></figure>
+    <figure><a href="img/work/bus-02.webp" class="zoom"><img src="img/work/bus-02.webp" alt="Pencil sketches of bus passengers in winter" loading="lazy"></a><figcaption>From “98/116”. 2016</figcaption></figure>
+    <figure><a href="img/work/armory.webp" class="zoom"><img src="img/work/armory.webp" alt="Ink illustration of a man in a suit in front of a wall of rifles" loading="lazy"></a><figcaption>Glenn, arms dealer. 2017</figcaption></figure>
   </div>
 </section>
 
@@ -120,7 +149,6 @@
   <p>I'm May Yeoshen, a Venezuelan-Canadian artist with more than fifteen years in the animation industry. I have worked as an art director, background painter and character designer for Disney Television, Netflix, Nickelodeon, Mattel, Warner Bros. and 9 Story, among others.</p>
   <p>These days I write, paint and develop <em>Una Sangre</em>, a story I have been carrying for more than twenty years.</p>
   <p class="contact"><a href="mailto:mayyeo@gmail.com">mayyeo@gmail.com</a></p>
-  <!-- Add or remove your personal profiles here -->
   <div class="socials">
       <a class="icon" href="https://www.instagram.com/mayyeoshen" aria-label="Instagram" title="Instagram">
         <img src="img/icons/instagram.webp" alt="">
@@ -141,8 +169,6 @@
 <section class="resume" id="resume">
   <h2>Résumé</h2>
   <p class="resume__title">Art Director &amp; Senior Artist</p>
-  <!-- Optional: put an up-to-date PDF without phone numbers next to index.html and uncomment.
-  <p><a class="btn" href="resume.pdf">Download PDF</a></p> -->
 
   <h3>Experience</h3>
 
