@@ -252,3 +252,32 @@ html:lang(ja) h3{letter-spacing:.08em}
   html:lang(ja) h2{font-size:clamp(1.7rem,6.5vw,2.4rem); letter-spacing:.04em; line-break:strict}
   html:lang(ja) .wishlist__text{font-size:1.2rem; letter-spacing:.04em}
 }
+
+/* ---------- Hero background: fixed size, independent of the text ---------- */
+/* The image is sized by the screen (100svh), not by the hero section, so it no longer
+   changes size when the text is longer in another language. If the content is taller
+   than the screen, the picture fades into the page background at its bottom edge. */
+.hero{background:var(--ink)}
+.hero__bg{
+  inset:auto;           /* cancel the old inset:0 */
+  top:0; left:0;
+  width:100%; height:100svh;
+  -webkit-mask-image:linear-gradient(to bottom,#000 88%,transparent);
+          mask-image:linear-gradient(to bottom,#000 88%,transparent);
+}
+
+/* ---------- Menu: same height in every language ---------- */
+/* Each menu item gets a fixed box height, so taller Japanese glyphs/line-height
+   can no longer make the bar taller than in English or Spanish. */
+.nav__name,
+.nav nav a{
+  display:flex; align-items:center;
+  height:1.9rem; line-height:1; white-space:nowrap;
+}
+.nav .lang{height:1.9rem}
+@media (max-width:820px){
+  /* menu text scales with the screen so the links always fit on ONE row in EN, ES and JA,
+     and the language switcher always sits on the second row */
+  .nav{font-size:clamp(.72rem,3.7vw,1rem)}
+  .nav nav{gap:.2rem clamp(.5rem,2.4vw,1rem); flex-wrap:wrap}
+}
